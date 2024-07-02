@@ -41,3 +41,4 @@ def create_log_entry(val1, val2, val3, val4, val5, val6, val7, val8, val9, val10
     timestamp = datetime.now().strftime('%Y%m%d_%Hh%Mm%Ss')
     processing_duration = str(processing_time)
     return [timestamp, val1, val2, val3, val4, val5, val6, val7, val8, val9, val10, val11, val12, processing_duration]
+
