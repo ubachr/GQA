@@ -68,5 +68,4 @@ def parallel_overlay(gdf1, gdf2, npartitions=10, how='intersection'):
     overlays = [gpd.overlay(gdf1_part, gdf2_part, how=how) for gdf1_part in gdf1_parts for gdf2_part in gdf2_parts]
     result = gpd.GeoDataFrame(pd.concat(overlays, ignore_index=True))
     
-    return result
-    
+    return result    
